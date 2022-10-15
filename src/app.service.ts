@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { HttpService } from '@nestjs/axios';
 import { lastValueFrom, map } from 'rxjs';
 import { Model } from 'mongoose';
-import { Search } from '../models/user.model';
+import { Search } from './models/search.model';
 
 @Injectable()
 export class AppService {

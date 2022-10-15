@@ -12,11 +12,6 @@ export class AppController {
     return { message: 'helo' };
   }
 
-  @Get('/db')
-  getDb(): any {
-    return this.appService.getDb();
-  }
-
   @Post()
   searchData(@Body() body: any, @Req() req: Request, @Res() res: Response) {
     return this.appService.searchData(body, req, res);
